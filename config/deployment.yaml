@@ -1,5 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
+metadata:	
+  name: hello-world	
+  namespace: default
+  labels:
+    app: hello-world
 spec:
   progressDeadlineSeconds: 600
   replicas: 5
