@@ -27,7 +27,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: gcr.io/test-project-231420/github.com/ostreifel/dockercloud-hello-world:LATEST
+      - image: gcr.io/test-project-231420/github.com/ostreifel/dockercloud-hello-world:$SHORT_SHA
         imagePullPolicy: IfNotPresent
         name: dockercloud-hello-world
         resources: {}
